@@ -1,0 +1,182 @@
+
+<html>
+<head><meta charset="utf-8">
+<style>
+.btn{border:none;
+color:white;
+padding:10px 28px;
+font-size:16px;
+cursor:pointer;
+border-radius: 6px;
+margin: 4px 5px;}
+.success{background-color:#DC143C;}
+.success:hover{background-color:#48D1CC;}
+
+.info{background-color:#FF8C00;}
+.info:hover{background-color:#48D1CC;}
+
+.warning{background-color:#FA8072;}
+.warning:hover{background-color:#48D1CC;}
+
+.danger{background-color:#00FF7F;}
+.danger:hover{background-color:#48D1CC;}
+
+.default{background-color:#FFA500;}
+.default:hover{background-color:#48D1CC;}
+
+.a{background-color:#B22222;}
+.a:hover{background-color:#48D1CC;}
+ </style>
+</head>
+<body>
+<CENTER>
+<table style="text-align: center; cellspacing="">
+<body>
+<tr>
+<td bgcolor="#66CDAA" ><img src="U1.jpg"  width="250" height="190" align="center"> </td>
+
+<td colspan="2"bgcolor="#66CDAA"><video autoplay  width="400" height="240" >
+<source src="file:///D:/htdocs/NUSH.mp4"="center"></video></td>
+
+<td bgcolor="#66CDAA"> <img src="U1.jpg"  width="250" height="190" align="center"></td>
+</tr>
+
+<tr>
+<td><font size="3" color="#2E8B57"><b>ВЧЕРА Я ПОСАДИЛ ОДНО ДЕРЕВО<br> УТРОМ И ОДНО ДЕРЕВО ДНЕМ</b></td>
+<td> <img src="tr2.jpg"  width="210" height="200" align="center"></td>
+<td><font size="3" color="#2E8B57"><b>СКОЛЬКО ДЕРЕВЬЕВ <br>Я ПОСАДИЛ ВЧЕРА?</b> </td>
+
+<td>
+<!DOCTYPE html>
+<html>
+<body>
+<p><font size="3" color="#2E8B57"><b>ВВЕДИ ЧИСЛО:</b></p>
+
+<CENTER><input id="demo1" type="text"></CENTER>
+<button type="buttonA" onclick="myFunction()"><font size="3" color="#2E8B57"><b>ПРОВЕРЬ</b></button>
+<b><p id="message1"></p></b>
+<script>
+function myFunction() {
+    var message, y;
+    message = document.getElementById("message1");
+    message.innerHTML = "";
+    y = document.getElementById("demo1").value;
+		try { 
+        if( y == "2" )  throw "ВЕРНЫЙ !"  ;
+		if(isNaN(y)) throw "not a number";
+        y = Number(y);
+		if(y > 2 )    throw "НЕВЕРНЫЙ";
+		if(y < 2 )   throw "НЕВЕРНЫЙ";  }
+        catch(err) { message.innerHTML = "ОТВЕТ " + err ; 	
+		}}		
+</script>
+</body>
+</html></td>
+</tr>
+</CENTER>
+
+<tr>
+<td><font size="3" color="#A52A2A"><b>ВЕЧЕРОМ Я ВЫШЕЛ<br> ПРОГУЛЯТЬСЯ В САД<br> И УВИДЕЛ БАБОЧЕК <br>СИДЯЩИХ НА ДЕРЕВЕ</b></td>
+<td> <video autoplay controls  width="310" height="" ><source src="file:///D:/htdocs/baterf.mp4"></video> </td>
+<td><font size="3" color="#A52A2A"><b>СКОЛЬКО БАБОЧЕК<br> ТЫ ВИДИШЬ НА ДЕРЕВЕ?</b</td>
+<td>
+
+<body><CENTER>
+<p><font size="3" color="#2E8B57"><b>ВВЕДИ ЧИСЛО:</b></p>
+
+<CENTER><input id="demo2" type="text"></CENTER>
+<button type="buttonB" onclick="myFunctionB()"><font size="3" color="#2E8B57"><b>ПРОВЕРЬ</b></button>
+<b><p id="message2"="y"></p></b>
+
+<script>
+function myFunctionB() {
+    var message, y;
+    message = document.getElementById("message2");
+    message.innerHTML = "";
+    y = document.getElementById("demo2").value;
+	
+		try { 
+        if( y == "3" )  throw "ВЕРНЫЙ !"  ;
+		if(isNaN(y)) throw "not a number";
+        y = Number(y);
+		if(y > 3 )    throw "НЕВЕРНЫЙ";
+		if(y < 3 )   throw "НЕВЕРНЫЙ";  }
+        catch(err) { message.innerHTML = "ОТВЕТ " + err ;
+ 		}}
+</script>
+</td>
+</tr>
+</CENTER>
+</body>
+
+<tr>
+<td><font size="3" color="#2E8B57"><b>ЧЕРЕЗ ЧАС Я ПОСАДИЛ <br>3 ДЕРЕВА,<br> А ПОТОМ ЕЩЕ  <br>ОДНО</b></td>
+<td> <img src="tr4.jpg"  width="390" height="260" align="center"></td>
+<td><font size="3" color="#2E8B57"><b>СКОЛЬКО ДЕРЕВЬЕВ <br> Я ПОСАДИЛ?</b</td>
+<td>
+
+<body><CENTER>
+<p><font size="3" color="#2E8B57"><b>ВВЕДИ ЧИСЛО:</b></p>
+
+<CENTER><input id="demo3" type="text"></CENTER>
+<button type="buttonC" onclick="myFunctionC()"><font size="3" color="#2E8B57"><b>ПРОВЕРЬ</b></button>
+<b><p id="message3"="y"></p></b>
+
+<script>
+function myFunctionC() {
+    var message, y;
+    message = document.getElementById("message3");
+    message.innerHTML = "";
+    y = document.getElementById("demo3").value;
+	
+		try { 
+        if( y == "4" )  throw "ВЕРНЫЙ !"  ;
+		if(isNaN(y)) throw "not a number";
+        y = Number(y);
+		if(y > 4 )    throw "НЕВЕРНЫЙ";
+		if(y < 4 )   throw "НЕВЕРНЫЙ";  }
+        catch(err) { message.innerHTML = "ОТВЕТ " + err ;
+ 		}}
+</script>
+</td>
+</tr>
+</CENTER>
+</body>
+
+<tr><td></td><td></td><td><video autoplay width="280" height="" ><source src="file:///D:/htdocs/trees.mp4"></video></td>
+
+<td>
+<a href="file:///D:/htdocs/4.html"><FONT COLOR="#228B22"> <H4> <i> СЛЕДУЙ ЗА МНОЙ <br>НА ДРУГУЮ СТРАНИЦУ</br></i> </H4> </a>
+</td></tr></table></body>
+
+<body>
+<table><tr ><td></td></tr></table>
+<table  border="1"  >
+<tr><td>
+<a href="file:///D:/htdocs/1str.html">
+<button class="btn success">главная</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/2%20str.html">
+<button class="btn info">обучение 1</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/3str.html">
+<button class="btn warning">задачи</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/4.html">
+<button class="btn danger">обучение 2</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/5.html">
+<button class="btn default">проверь знания</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/6.html">
+<button class="btn a">собери яблоки</button>
+</td>
+</tr>
+</table>
+</body>
+</html>
