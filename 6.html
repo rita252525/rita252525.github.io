@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html><meta charset="utf-8">
+<head>
+<style>
+{box-sizing: border-box;}
+
+body {background: url(green.jpg);
+    padding: 1px;
+    font-family: Arial;}
+
+#div1 {
+    width: 300px;
+    height: 170px;
+    padding: 50px;
+    border: px solid #aaaaaa;
+	background: url(kor3.jpg); }
+#div2 {
+    width: 300px;
+    height: 170px;
+    padding: 50px;
+    border: px solid #aaaaaa;
+	background: url(kor3.jpg); }
+	
+.btn{border:none;
+color:white;
+padding:10px 28px;
+font-size:16px;
+cursor:pointer;
+border-radius: 6px;
+margin: 4px 5px;}
+.success{background-color:#DC143C;}
+.success:hover{background-color:#48D1CC;}
+.info{background-color:#FF8C00;}
+.info:hover{background-color:#48D1CC;}
+.warning{background-color:#FA8072;}
+.warning:hover{background-color:#48D1CC;}
+.danger{background-color:#00FF7F;}
+.danger:hover{background-color:#48D1CC;}
+.default{background-color:#FFA500;}
+.default:hover{background-color:#48D1CC;}
+.a{background-color:#B22222;}
+.a:hover{background-color:#48D1CC;}
+</style>
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();}
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);}
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));}
+</script>
+</head>
+<CENTER><i><font size="5" color="#FFFFE0"><b><i>Помоги Арине собрать яблоки в корзины<i/> 
+<table><tr><td colspan="3"><font size="4" color="#2E8B57">Сложи несколько яблок в первую и во вторую корзину. И посчитай сколько всего яблок в двух корзинах? 
+</td></tr></table>
+</CENTER><body>
+
+<CENTER><table><tr>
+<td><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div></td>
+<td width="40"></td>
+<td><div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" ></div></td>
+
+<td width="40"></td><td rowspan="3"><body><CENTER><video autoplay controls width="520" height="" ><source src="file:///D:/htdocs/arinaQ.mp4"></video></CENTER></td></tr>
+
+<tr><td><CENTER>
+<img id="drag1" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" align="center">
+<img id="drag2" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" align="center">
+<img id="drag3" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" align="center">
+<img id="drag4" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" align="center">
+<img id="drag5" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"align="center" ></CENTER></td>
+<td></td>
+<td><CENTER>
+<img id="drag6" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" align="center">
+<img id="drag7" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" align="center">
+<img id="drag8" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" align="center">
+<img id="drag9" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"align="center" >
+<img id="drag10" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"align="center"></CENTER></td></tr>
+
+<tr><td><CENTER>
+<img id="drag11" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" >
+<img id="drag12" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" >
+<img id="drag13" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" >
+<img id="drag14" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" >
+<img id="drag15" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" ></CENTER></td>
+<td></td>
+<td><CENTER>
+<img id="drag16" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" >
+<img id="drag17" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" >
+<img id="drag18" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" >
+<img id="drag19" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" >
+<img id="drag20" src="ap141.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60" ></CENTER>
+</td></tr>
+
+
+
+<script language="JavaScript">
+function myFunction4() {
+var val1 = parseInt(document.myForm4.myNum1.value);
+var val2 = parseInt(document.myForm4.myNum2.value);
+var val3 = val1 + val2;
+document.myForm4.myNum3.value = val3;}
+</script>
+<tr><td height="40px" colspan="3"></td></tr>
+<tr><td colspan="3" align="center"><font size="4" color="#B22222"><form name="myForm4">ПРОВЕРЬ СВОЙ РЕЗУЛЬТАТ:</td></tr>
+<tr><td><font size="4" color="#FFFFE0">Введите количество яблок в первой<br> корзине:&nbsp&nbsp<input type="num" name="myNum1"  value=0 size=10><p></td>
+<td width="40"></td>
+<td><font size="4" color="#FFFFE0">&nbsp&nbsp&nbsp&nbspВведите количество яблок во второй<br>&nbsp&nbsp&nbsp&nbsp&nbspкорзине:&nbsp&nbsp
+<input type="num" name="myNum2" value=0 size=10><p></td>
+<td></td></tr>
+<tr><td><input type="button" name="Button4" value="Узнай сколько всего яблок в двух корзинах" onclick="myFunction4(); return true;"><p> 
+<input type="num" name="myNum3" value=0 size=10><p></td></tr>
+</form>
+</table>
+
+<table><tr ><td></td></tr></table>
+<table  border="1"  >
+<tr><td>
+<a href="file:///D:/htdocs/1str.html">
+<button class="btn success">главная</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/2%20str.html">
+<button class="btn info">обучение 1</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/3str.html">
+<button class="btn warning">задачи</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/4.html">
+<button class="btn danger">обучение 2</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/5.html">
+<button class="btn default">проверь знания</button>
+</td>
+<td>
+<a href="file:///D:/htdocs/6.html">
+<button class="btn a">собери яблоки</button>
+</td>
+</tr>
+</table>
+
+
+ </html>
+
